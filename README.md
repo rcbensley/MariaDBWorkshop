@@ -11,36 +11,36 @@ This workshop is licensed under Creative Commons.
 ### Introduction, 30 Minutes
 * An introduction and brief history of MariaDB.
 * Why choose MariaDB?
-** OLTP Engines
-** Replication and Sharding
-** Column Store
-** S3 and Connect Engines
-** SQL Data Types and Languages
-** Statistics
+  * OLTP Engines
+  * Replication and Sharding
+  * Column Store
+  * S3 and Connect Engines
+  * SQL Data Types and Languages
+  * Statistics
 * Why should you not choose MariaDB?
-** You still might learn something today.
+  * You still might learn something today.
 
 ### Installation and Tooling, 60 Minutes
 * Installation and connection.
-** What's going in our config?
-*** ACID
-** Multiple installation options and platforms.
+  * What's going in our config?
+  * ACID
+  * Multiple installation options and platforms.
 * Cover common tools and clients.
-** CLI and GUI tools.
-** What does it come with?
-** On MacOS/Linux/Unix?
-** On Windows?
+  * CLI and GUI tools.
+  * What does it come with?
+  * On MacOS/Linux/Unix?
+  * On Windows?
 
 ### Create and Load Data, 60 Minutes
 * Cover a common schema design
-** Partitioning?
-** JSON
-** Dynamic and Virtual Columns
-** Using the Explain Plan to diagnose query performance.
+  * Partitioning?
+  * JSON
+  * Dynamic and Virtual Columns
+  * Using the Explain Plan to diagnose query performance.
 * Data life cycle
-** Backup
-** Restore
-** Archiving, basic ETL into ColumnStore from InnoDB.
+  * Backup
+  * Restore
+  * Archiving, basic ETL into ColumnStore from InnoDB.
 * Select into outfile
 * Load Data infile
 
@@ -48,7 +48,7 @@ This workshop is licensed under Creative Commons.
 * Covnert our server into a Master.
 * Create a slave from our Master data.
 * Monitor Replication
-** Break Replication
-** Repair Replication
+  * Break Replication
+  * Repair Replication
 * Advanced Scenarios and their requirements.
-** Scaling to TB+/PB+ levels is a problem. Not an opportunity.
+  * Scaling to TB+/PB+ levels is a problem. Not an opportunity.
