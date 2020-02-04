@@ -11,48 +11,47 @@ I am merely speaking from experience, having fun, and sharing the love with the 
 
 
 ## Agenda
+The workshop is about 2hr 15mins.
 
-### Introduction, 30 Minutes
+### Introduction, 15 Minutes
 * An introduction and brief history of MariaDB.
+  * Recommended reading and training behind this workshop.
 * Why choose MariaDB?
-  * OLTP Engines
-  * Replication and Sharding
-  * Column Store
-  * S3 and Connect Engines
-  * SQL Data Types and Languages
-  * Statistics
 * Why should you not choose MariaDB?
-  * You still might learn something today.
+  * You still might learn something today, even if you are using another Database.
 
-### Installation and Tooling, 60 Minutes
-* Installation and connection.
-  * What's going in our config?
-  * ACID
-  * Multiple installation options and platforms.
-* Cover common tools and clients.
-  * CLI and GUI tools.
-  * What does it come with?
-  * On MacOS/Linux/Unix?
-  * On Windows?
+### Up and Running, 30 minutes
+* Install and run our Virtual Machine, if you haven't already.
+* Config files and logs.
+  * ACID and UTF-8.
+  * What is the binary log?
+* Tooling and access.
+  * Diagnose connection issues.
 
-### Create and Load Data, 60 Minutes
+### Create and Load Data, 45 Minutes
 * Cover a common schema design
-  * Partitioning?
+  * Transactions
   * JSON
   * Dynamic and Virtual Columns
   * Using the Explain Plan to diagnose query performance.
-* Data life cycle
-  * Backup
-  * Restore
-  * Archiving, basic ETL into ColumnStore from InnoDB.
-* Select into outfile
-* Load Data infile
+* Archive into ColumnStore
+* Backup
+* Restore
 
-### Replication, 60 Minutes
-* Covnert our server into a Master.
-* Create a slave from our Master data.
+### Replication and Failover, 30 Minutes
+* Prepare a slave with data from our master.
+* Start replicating.
 * Monitor Replication
   * Break Replication
   * Repair Replication
-* Advanced Scenarios and their requirements.
-  * Scaling to TB+/PB+ levels is a problem. Not an opportunity.
+
+### Advanced Scenarios, Remaining Time
+Discussion only
+* MariaDB at scale
+* Multisource Replication
+* Spider
+* Column Store
+* ClustrixDB
+* MaxScale
+
+* Q&A
