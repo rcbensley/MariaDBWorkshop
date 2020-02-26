@@ -93,6 +93,7 @@ Let's make a new database and use it, on the master (db1):
     SQL> USE shop;
 
 Now create a table in this new database:
+
     SQL> source /vagrant/table.sql;
 
 Does this new database and table exist on the slave (db2)?:
