@@ -73,8 +73,13 @@ Login as root, using socket authentication:
 
     $ sudo mysql
 
-## 
+## Built in databases, tables and functions
 
+    SQL> SHOW DATABASES;
+    SQL> SHOW SCHEMAS;
+    SQL> USE information_schema;
+    SQL> SHOW TABLES;
+    SQL> USE mysql;
 
 ## Setup Replication
 
@@ -113,7 +118,7 @@ Insert some data:
 
     SQL> INSERT INTO TABLE shop.orders (customer_id, product_id, invoice_id) VALUES (1, 2, 3);
 
-Select some data:
+Select some data, from db2 as well:
 
     SQL > SELECT COUNT(*) FROM shop.orders;
     SQL > SELECT * FROM shop.orders;
