@@ -13,14 +13,14 @@ I am merely speaking from experience, having fun, and sharing the love with the 
 ## Agenda
 The workshop is about 2hr 15mins.
 
-### Introduction, 15 Minutes
+### Introduction
 * An introduction and brief history of MariaDB.
   * Recommended reading and training behind this workshop.
 * Why choose MariaDB?
 * Why should you not choose MariaDB?
   * You still might learn something today, even if you are using another Database.
 
-### Up and Running, 30 minutes
+### Up and Running
 * Install and run our Virtual Machine, if you haven't already.
 * Config files and logs.
   * ACID and UTF-8.
@@ -28,7 +28,7 @@ The workshop is about 2hr 15mins.
 * Tooling and access.
   * Diagnose connection issues.
 
-### Create and Load Data, 45 Minutes
+### Create and Load Data
 * Cover a common schema design
   * Transactions
   * JSON
@@ -38,14 +38,14 @@ The workshop is about 2hr 15mins.
 * Backup
 * Restore
 
-### Replication and Failover, 30 Minutes
+### Replication and Failover
 * Prepare a slave with data from our master.
 * Start replicating.
 * Monitor Replication
   * Break Replication
   * Repair Replication
 
-### Advanced Scenarios, Remaining Time
+### Advanced Scenarios
 Discussion only
 * MariaDB at scale
 * Multisource Replication

@@ -1,4 +1,4 @@
-[client]
+[mysql]
 prompt="MariaDB \u@\h [\d] SQL> "
 
 [server]
