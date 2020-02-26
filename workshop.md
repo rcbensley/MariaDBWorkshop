@@ -109,8 +109,7 @@ Select some data, from db2 as well:
     SQL> SELECT COUNT(*) FROM shop.orders;
     SQL> SELECT * FROM shop.orders;
     SQL> SELECT * FROM shop.orders WHERE order_id = LAST_INSERT_ID();
-    SQL> select o.customer_id, COUNT(o.product_id), p.product_name FROM orders o JOIN products
-p on o.product_id = p.product_id group by o.customer_id, o.product_id;
+    SQL> select o.customer_id, COUNT(o.product_id), p.product_name FROM orders o JOIN products p on o.product_id = p.product_id group by o.customer_id, o.product_id;
 
 Add another column to our table:
 
