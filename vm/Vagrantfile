@@ -2,14 +2,27 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "centos/8"
-  # config.vm.box_check_update = false
-  config.vm.network "forwarded_port", guest: 3306, host: 4406
-  # config.vm.network "private_network", ip: "192.168.33.10"
-  # config.vm.network "public_network"
-  config.vm.provider "virtualbox" do |vb|
-    vb.memory = "1024"
+  config.vm.define "db1", primary: true do |db1|
+    db1.vm.box = "centos/8"
+    db1.vm.hostname = "db1"
+    db1.vm.network "forwarded_port", guest: 3306, host: 4406
+    db1.vm.network "private_network", ip: "172.10.10.10"
+    db1.vm.provider "virtualbox" do |vb1|
+      vb1.name = "db1"
+      vb1.memory = "512"
+    end
+    db1.vm.provision "shell", path: "setup.sh"
   end
 
-  config.vm.provision "shell", path: "setup.sh"
+  config.vm.define "db2", primary: true do |db2|
+    db2.vm.box = "centos/8"
+    db2.vm.hostname = "db2"
+    db2.vm.network "forwarded_port", guest: 3306, host: 4407
+    db2.vm.network "private_network", ip: "172.10.10.11"
+    db2.vm.provider "virtualbox" do |vb2|
+      vb2.name = "db2"
+      vb2.memory = "512"
+    end
+    db2.vm.provision "shell", path: "setup.sh"
+  end
 end

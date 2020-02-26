@@ -1,0 +1,12 @@
+[client]
+prompt="MariaDB \u@\h [\d] SQL> "
+
+[server]
+innodb_buffer_pool_size = 128M      # Innodb ram usage.
+innodb_flush_log_at_trx_commit = 1  # Sync writes directly to disk.
+key_buffer_size = 32M               # Myisam/aria ram usage.
+
+# Replication
+server_id = 2                       # master is 1, slave is 2
+log_bin = my_bin_log
+read_only = 1
